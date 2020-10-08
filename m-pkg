@@ -206,9 +206,8 @@ elif [[ $n == 8 || $n == 08 ]]; then
 	      clear
 	      cd $HOME
 	      apt-get install wget -yq --silent
-	      wget https://raw.githubusercontent.com/Hax4us/Metasploit_termux/master/metasploit.sh 
-	      chmod +x metasploit.sh
-	      ./metasploit.sh
+	      pkg install unstable-repo
+	      pkg install metasploit
 	    echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
 read answer
