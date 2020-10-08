@@ -8,7 +8,7 @@ clear
 
 #updating terminal
 echo 
-echo -e "\e[32m[\e[34m*\e[32m]\e[36m Installing Termux-Megapackage \e[m "
+echo -e "\e[32m[\e[34m*\e[32m]\e[36m Installing T-Mega \e[m "
 echo
 apt-get update -yq --silent
 apt-get upgrade -y
