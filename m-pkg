@@ -214,7 +214,7 @@ read answer
  
   if [ "$answer" != "${answer#[Yy]}" ] ;then
        
-       am start -a android.intent.action.VIEW -d https://www.youtube.com/channel/UCv80Btv_4kn_9b-GVgPIwMg >> /dev/null 2>&1
+       am start -a android.intent.action.VIEW -d https://youtu.be/5uFVhDACups >> /dev/null 2>&1
   
 else
 	
@@ -256,13 +256,18 @@ elif [[ $n == 10 ]]; then
 	      echo
 	      echo "Successfully installed Optical-Framework"
 	      echo 
-	      echo "Choose option 3 for termux"
-	      echo
-	      sleep 5
-	      python2 optiva.py
-	      cd $HOME
+	      echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
-             fi
+read answer
+ 
+  if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/rMsTaPmRpFA >> /dev/null 2>&1
+  
+ else
+	
+     echo     
+ fi
 
 elif [[ $n == 11 ]]; then
 
@@ -330,11 +335,21 @@ elif [[ $n == 13 ]]; then
 	      cd $HOME
 	      apt-get install python -yq --silent
 	      apt-get install python2 -yq --silent
-	      git clone https://github.com/TheSpeedX/TBomb
+	      git clone https://github.com/Hackertrackersj/Tbomb
 	      clear
-	      cd TBomb
-	      chmod +x TBomb.sh
-	      bash TBomb.sh
+	     echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+  if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/gq7NKkNYuVA >> /dev/null 2>&1
+  
+else
+	
+     echo
+  
+ fi
 	      cd $HOME
 
 	     fi
