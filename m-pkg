@@ -254,7 +254,7 @@ elif [[ $n == 10 ]]; then
 	      bash installer.sh
 	      echo
 	      echo "Successfully installed Optical-Framework"
-	      echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
 read answer
  
