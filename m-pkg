@@ -249,11 +249,8 @@ elif [[ $n == 10 ]]; then
 	      cd $HOME
 	      pkg install python python2 -y
 	      git clone https://github.com/joker25000/Optiva-Framework
-	      cd Optiva-Framework
-	      chmod +x installer.sh
-	      bash installer.sh
-	      echo
 	      echo "Successfully installed Optical-Framework"
+	      
 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
 read answer
@@ -267,6 +264,9 @@ else
      echo
   
  fi	
+
+
+
 
 
 elif [[ $n == 11 ]]; then
