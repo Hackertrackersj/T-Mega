@@ -262,13 +262,7 @@ read answer
 else
 	
      echo
-  
- fi	
-
-
-
-
-
+  	
 elif [[ $n == 11 ]]; then
 
 	     DIR="$HOME/ubuntu-in-termux"
