@@ -1,18 +1,16 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 ############################################
-#        Project : T-Megapackage           #
-#          author : Nitro Hacker            #
+#        Project : T-Mega                  #
+#          author : Nitro                  #
 #  EMAIL : hackertrackerwithnitro@gmail.com #
 ############################################
 
 clear
 echo 
-echo "//    _____    __  __               
-//   |_   _|__|  \/  |___ __ _ __ _ 
-//     | ||___| |\/| / -_) _` / _` |
-//     |_|    |_|  |_\___\__, \__,_|
-//                       |___/      
+echo "
+          █▀▄▀█ █▀▀ █▀▀ ▄▀█ █▀█ ▄▀█ █▀▀ █▄▀ ▄▀█ █▀▀ █▀▀
+          █ ▀ █ ██▄ █▄█ █▀█ █▀▀ █▀█ █▄▄ █ █ █▀█ █▄█ ██▄
 	                                                V 1.0" | lolcat	      
 echo "                   >>> created by:-NITRO " |lolcat
 echo "              >>> Keep Supporting:-NITRO HACKER " |lolcat
@@ -208,7 +206,8 @@ elif [[ $n == 8 || $n == 08 ]]; then
 	      apt-get install wget -yq --silent
 	      pkg install unstable-repo
 	      pkg install metasploit
-	    echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
 read answer
  
@@ -220,7 +219,7 @@ else
 	
      echo
   
- fi
+ fi	
 
 elif [[ $n == 9 || $n == 09 ]]; then
 
@@ -256,16 +255,13 @@ elif [[ $n == 10 ]]; then
 	      echo
 	      echo "Successfully installed Optical-Framework"
 	      echo 
-	      echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+	      echo "Choose option 3 for termux"
+	      echo
+	      sleep 5
+	      python2 optiva.py
+	      cd $HOME
 
-read answer
- if [ "$answer" != "${answer#[Yy]}" ] ;then
-       
-       am start -a android.intent.action.VIEW -d https://youtu.be/rMsTaPmRpFA >> /dev/null 2>&1
-  else
-	
-     echo     
-     fi
+             fi
 
 elif [[ $n == 11 ]]; then
 
@@ -333,21 +329,11 @@ elif [[ $n == 13 ]]; then
 	      cd $HOME
 	      apt-get install python -yq --silent
 	      apt-get install python2 -yq --silent
-	      git clone https://github.com/Hackertrackersj/Tbomb
+	      git clone https://github.com/TheSpeedX/TBomb
 	      clear
-	     echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
-
-read answer
- 
-  if [ "$answer" != "${answer#[Yy]}" ] ;then
-       
-       am start -a android.intent.action.VIEW -d https://youtu.be/gq7NKkNYuVA >> /dev/null 2>&1
-  
-else
-	
-     echo
-  
- fi
+	      cd TBomb
+	      chmod +x TBomb.sh
+	      bash TBomb.sh
 	      cd $HOME
 
 	     fi
