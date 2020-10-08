@@ -1,9 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 ############################################
-#        Project : T-Mega                  #
-#          author : Nitro                  #
-#  EMAIL : hackertrackerwithnitro@gmail.com #
+#        Project : T-Mega           #
+#          author : Nitro                 #
+#       #
 ############################################
 
 clear
@@ -12,8 +12,8 @@ echo "
           █▀▄▀█ █▀▀ █▀▀ ▄▀█ █▀█ ▄▀█ █▀▀ █▄▀ ▄▀█ █▀▀ █▀▀
           █ ▀ █ ██▄ █▄█ █▀█ █▀▀ █▀█ █▄▄ █ █ █▀█ █▄█ ██▄
 	                                                V 1.0" | lolcat	      
-echo "                   >>> created by:-NITRO " |lolcat
-echo "              >>> Keep Supporting:-NITRO HACKER " |lolcat
+echo "                   >>> created by:-Nitro " |lolcat
+echo "              >>> Keep Supporting:-Nitro Hacker " |lolcat
 echo " "
 echo -e "\e[92m=======================================================================\e[m "
 echo -e "\e[32m[\e[33m01\e[32m]\e[96m zphisher \e[m                      \e[32m[\e[33m11\e[32m]\e[96m ubuntu-in-termux \e[m "                  
@@ -206,8 +206,7 @@ elif [[ $n == 8 || $n == 08 ]]; then
 	      apt-get install wget -yq --silent
 	      pkg install unstable-repo
 	      pkg install metasploit
-
-echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+ echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
 read answer
  
@@ -219,7 +218,7 @@ else
 	
      echo
   
- fi	
+ fi
 
 elif [[ $n == 9 || $n == 09 ]]; then
 
@@ -249,20 +248,20 @@ elif [[ $n == 10 ]]; then
 	      cd $HOME
 	      pkg install python python2 -y
 	      git clone https://github.com/joker25000/Optiva-Framework
+	      cd Optiva-Framework
+	      chmod +x installer.sh
+	      bash installer.sh
+	      echo
 	      echo "Successfully installed Optical-Framework"
-	      
-echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+	      echo 
+	      echo "Choose option 3 for termux"
+	      echo
+	      sleep 5
+	      python2 optiva.py
+	      cd $HOME
 
-read answer
- 
-  if [ "$answer" != "${answer#[Yy]}" ] ;then
-       
-       am start -a android.intent.action.VIEW -d https://youtu.be/rMsTaPmRpFA >> /dev/null 2>&1
-  
-else
-	
-     echo
-  	
+             fi
+
 elif [[ $n == 11 ]]; then
 
 	     DIR="$HOME/ubuntu-in-termux"
