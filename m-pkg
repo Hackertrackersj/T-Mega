@@ -254,14 +254,20 @@ elif [[ $n == 10 ]]; then
 	      bash installer.sh
 	      echo
 	      echo "Successfully installed Optical-Framework"
-	      echo 
-	      echo "Choose option 3 for termux"
-	      echo
-	      sleep 5
-	      python2 optiva.py
-	      cd $HOME
+	      echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
-             fi
+read answer
+ 
+  if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/rMsTaPmRpFA >> /dev/null 2>&1
+  
+else
+	
+     echo
+  
+ fi	
+
 
 elif [[ $n == 11 ]]; then
 
