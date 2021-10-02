@@ -7,17 +7,16 @@ Its Hard to Install Every Huge Tool like Metasploit, Kali Nethunter Rootless and
 
 Commands for termux
 
-``bash
-
-termux-setup-storage
-pkg update && pkg upgrade && pkg install git -y
-git clone https://github.com/Hackertrackersj/T-Mega
-ls
-cd T-Mega
-ls
-chmod +x *
-./install.sh
-m-pkg
+```bash
+> termux-setup-storage
+> pkg update && pkg upgrade && pkg install git -y
+> git clone https://github.com/Hackertrackersj/T-Mega
+> ls
+> cd T-Mega
+> ls
+> chmod +x *
+> ./install.sh
+> m-pkg
 
 ```
 
